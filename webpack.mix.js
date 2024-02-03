@@ -22,5 +22,7 @@ mix.js("resources/js/app.js", "public/js")
     .options({
         processCssUrls: false,
     })
+    /** Site */
+    .sass("resources/sass/site/app.scss", "public/css/site/")
     .sourceMaps()
     .purgeCss();

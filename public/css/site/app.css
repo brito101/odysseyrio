@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Roboto:wght@400;700&display=swap);
+/** Colors */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/*ELEMENTS*/
+img {
+  max-width: 100%;
+}
+
+img a {
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  margin: 20px 0 0 0;
+}
+
+button {
+  outline: none !important;
+  border: none !important;
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
+}
+
+* {
+  color: #3d4757;
+  background-color: #fbfbfb;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+#hero h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #000d3c;
+}

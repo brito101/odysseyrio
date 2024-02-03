@@ -7,7 +7,7 @@ use App\Http\Controllers\Admin\{
     ACL\RoleController,
     ChangelogController,
 };
-
+use App\Http\Controllers\Site\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -50,9 +50,8 @@ Route::group(['middleware' => ['auth']], function () {
 
 /** Web */
 /** Home */
-// Route::get('/', [SiteController::class, 'index'])->name('home');
-Route::get('/', function () {
-    return redirect('admin');
+Route::name('site.')->group(function () {
+    Route::get('/', [HomeController::class, 'index'])->name('home');
 });
 
 Auth::routes([
