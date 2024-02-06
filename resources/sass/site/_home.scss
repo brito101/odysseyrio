@@ -1,7 +1,56 @@
 #hero {
+    margin-top: -30px;
+    position: relative;
+    background: linear-gradient(
+        to right,
+        $color-dark-blue 30%,
+        transparent 100%
+    );
+    animation: pulse 2.5s forwards;
+
+    @keyframes pulse {
+        0% {
+            background-color: $color-dark-blue;
+        }
+        100% {
+            background-color: transparent;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        background-color: $color-dark-blue;
+        animation: none;
+    }
+
+    &:after {
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        z-index: -1;
+        background: url("#{$imgPath}/bg-hero.webp") center no-repeat;
+        background-size: cover;
+        background-position: center 50%;
+
+        @media (max-width: 1000px) {
+            background-image: none!important;
+        }
+    }
+
+    img {
+        max-width: 350px;
+        height: auto;
+    }
+
     h2 {
         font-family: "Roboto", sans-serif;
         font-weight: 700;
-        color: $color-dark-blue;
+        color: $background-color;
+    }
+
+    p {
+        color: $color-yellow;
     }
 }

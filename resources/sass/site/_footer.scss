@@ -1,0 +1,40 @@
+#footer {
+    background-color: $color-dark-blue;
+    position: relative;
+
+    &:after {
+        content: "";
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background: url("#{$imgPath}/bg-shape.png") right center no-repeat;
+        background-size: contain;
+
+        @media (max-width: 1000px) {
+            background-image: none!important;
+        }
+    }
+
+    h2 {
+        font-family: "Roboto", sans-serif;
+    }
+
+    i {
+        color: $color-yellow;
+    }
+
+    a {
+        text-decoration: none !important;
+        color: $background-color;
+
+        &:hover {
+            color: $color-yellow;
+        }
+    }
+
+    #copyright {
+        border-top: 2px solid $color-yellow;
+    }
+}

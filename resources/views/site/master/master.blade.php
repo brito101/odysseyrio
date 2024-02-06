@@ -22,45 +22,74 @@
     <meta itemprop="url" content="{{ env('APP_URL') }}" />
     {{-- <meta itemprop="image" content="{{ asset('img/share.png') }}" /> --}}
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-    {{-- <link rel="icon" type="image/png" href="{{ asset('img/logo.svg') }}" />
-<link rel="stylesheet" href="{{ asset('site/fonts/styles.css') }}" /> --}}
+    {{-- <link rel="icon" type="image/png" href="{{ asset('img/logo.svg') }}" /> --}}
+    <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/site/app.css') }}" />
     @metas
 </head>
 
 <body>
-    <header>
-        <h1>ODYSSEYRIO</h1>
-        <ul>
-            <li>SOBRE</li>
-            <li>EXPERTISE</li>
-            <li>GESTÃO</li>
-            <li>DIFERENCIAIS</li>
-            <li>CONTATO</li>
-        </ul>
-    </header>
+    <div class="shadow-lg sticky-top bg-light" id="header">
+        <div class="container">
+            <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
+                <a href="{{ route('site.home') }}"
+                    class="d-flex align-items-center mb-0 mb-md-2 mb-lg-0 m-md-auto m-lg-0 me-lg-auto text-decoration-none">
+                    <img src="{{ asset('img/black_icon_transparent_background.png') }}" class="bi me-3" width="55"
+                        height="60">
+                    <span class="fs-2 fw-bold">ODYSSEYRIO</span>
+                </a>
+                <ul class="nav nav-pills d-none d-md-flex align-items-center">
+                    <li class="nav-item"><a href="#company" class="nav-link">A EMPRESA</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">EXPERTISE</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">GESTÃO</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">DIFERENCIAIS</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link">CONTATO</a></li>
+                </ul>
+            </header>
+        </div>
+    </div>
 
     <main>
         @yield('content')
     </main>
 
-    <footer>
+    <footer id="footer" class="py-4 text-light">
         <section>
-            <header>
-                <h2>CONTATO</h2>
-                <ul>
-                    <li>odysseyrio2@gmail.com</li>
-                    <li>odysseyrio2@odysseyrio.com.br</li>
-                    <li>Whatsapp +55 21 97088 2353</li>
-                </ul>
-            </header>
-        </section>
-        <section>
-            <p>ODYSSEYRIO®2024 Todos os direitos reservados.</p>
+            <div class="container">
+                <header>
+                    <h2 class="fs-2 fw-bold text-center text-lg-start mt-4">CONTATO</h2>
+                </header>
+                <div class="d-flex flex-wrap py-5">
+                    <div class="col-12 col-md-4 text-center text-lg-start">
+                        <img src="{{ asset('img/logo.gif') }}" alt="ODYSSEYRIO" title="ODYSSEYRIO" width="350"
+                            height="" class="mb-4 mb-lg-0">
+                    </div>
+                    <div class="col-12 col-md-8 d-flex align-items-center">
+                        <ul class="w-100 text-center text-md-start">
+                            <li class="my-2"><i class="fa fa-envelope me-2"></i> <a title="Contato por e-mail"
+                                    href="mailto:odysseyservicos@proton.me"
+                                    rel="noreferrer">odysseyservicos@proton.me</a></li>
+                            <li class="my-2"><i class="fab fa-whatsapp me-2"></i> <a title="Contato por WhatApp"
+                                    href="https://wa.me/5521970882353" target="_blank" rel="noreferrer">+55 21 97088
+                                    2353</a></li>
+                            <li class="my-2"><i class="fa fa-globe me-2"></i> <a
+                                    href="www.odysseyrio.com.br">www.odysseyrio.com.br</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                <div class="container text-center pt-2">
+                    <p>ODYSSEYRIO ® {{ date('Y') }} Todos os direitos reservados.</p>
+                </div>
+            </div>
         </section>
     </footer>
 
-    <script></script>
+    <button aria-label="Voltar ao topo da página" title="Voltar ao topo da página" class="smoothScroll-top"><i
+            class="fa fa-chevron-up"></i></button>
+
+    <script src="{{ asset('js/button-top.js') }}"></script>
     @yield('custom_js')
 </body>
 
