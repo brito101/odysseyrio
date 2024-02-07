@@ -63,7 +63,7 @@
                 <div class="d-flex flex-wrap align-items-center">
                     <div class="col-12">
                         <header>
-                            <h3 class="text-center">EXPERTISE<h3>
+                            <h3 class="text-center">EXPERTISE</h3>
                         </header>
                         <div class="card">
                             <ul class="list-group list-group-flush">
