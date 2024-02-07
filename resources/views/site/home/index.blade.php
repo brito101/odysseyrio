@@ -136,7 +136,7 @@
     </section>
 
     <section id="clients" class="py-5">
-        <h3 class="d-none">Nossos Números</h3>
+        <h3 class="d-none">NOSSOS NÚMEROS</h3>
         <div class="container pt-5">
             <div class="d-flex flex-wrap justify-content-center">
                 <article class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
@@ -170,7 +170,7 @@
     </section>
 
     <section id="brands" class="pb-5">
-        <h3 class="d-none">Clientes</h3>
+        <h3 class="d-none">CLIENTES</h3>
         <div class="container py-5">
             @php $brands = [1 => "Blue Macaw", 2 => "JLL", 3 => "Maersk", 4 => "Goodman"]@endphp
             <div class="d-flex flex-wrap justify-content-center">
