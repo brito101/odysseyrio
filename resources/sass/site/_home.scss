@@ -57,6 +57,10 @@
 }
 
 #company {
+    img {
+        object-fit: cover;
+    }
+
     h3 {
         font-family: "Roboto", sans-serif;
         font-weight: 700;
@@ -160,7 +164,7 @@
     background-position: center;
     background-attachment: fixed;
 
-    @media(max-width:1000px) {
+    @media (max-width: 1000px) {
         background-attachment: unset;
     }
 
@@ -221,8 +225,8 @@
             font-size: 1rem !important;
             color: $color-default !important;
             display: block;
-            font-family: "Nunito", sans-serif!important;
-            font-weight: 400!important;
+            font-family: "Nunito", sans-serif !important;
+            font-weight: 400 !important;
             margin-top: 10px;
         }
     }
