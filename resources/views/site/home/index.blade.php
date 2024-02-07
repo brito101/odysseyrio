@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <div>
-                    <img src="{{ asset('img/expertise.png') }}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                    <img src="{{ asset('img/expertise.webp') }}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
                         width="700" height="500" loading="lazy">
                 </div>
             </div>
