@@ -25,6 +25,7 @@
     <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}" />
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/site/app.css') }}" />
+    <link rel="preload" fetchpriority="high" as="image" href="{{ asset('img/bg-hero.webp') }}" type="image/webp">
     @metas
 </head>
 
@@ -61,8 +62,8 @@
                 </header>
                 <div class="d-flex flex-wrap py-5">
                     <div class="col-12 col-md-4 text-center text-lg-start">
-                        <img src="{{ asset('img/logo.gif') }}" alt="ODYSSEYRIO" width="350"
-                            height="299" class="mb-4 mb-lg-0">
+                        <img src="{{ asset('img/logo.gif') }}" alt="ODYSSEYRIO" width="350" height="299"
+                            class="mb-4 mb-lg-0">
                     </div>
                     <div class="col-12 col-md-8 d-flex align-items-center">
                         <ul class="w-100 text-center text-md-start">
