@@ -24,7 +24,7 @@
                         @for ($i = 1; $i <= 8; $i++)
                             <div class="carousel-item {{ $i == 1 ? 'active' : '' }}">
                                 <img src="{{ asset('img/slide/slide-' . $i . '.webp') }}" class="d-block w-100"
-                                    alt="Imagem do depósito {{ $i }}" width="756" height="425">
+                                    alt="Imagem do depósito {{ $i }}" width="651" height="425">
                             </div>
                         @endfor
                     </div>
