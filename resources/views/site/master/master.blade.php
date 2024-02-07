@@ -35,7 +35,7 @@
                 <a href="{{ route('site.home') }}"
                     class="d-flex align-items-center mb-0 mb-md-2 mb-lg-0 m-md-auto m-lg-0 me-lg-auto text-decoration-none">
                     <img src="{{ asset('img/black_icon_transparent_background.png') }}" class="bi me-3" width="55"
-                        height="60">
+                        height="60" alt="logo">
                     <span class="fs-2 fw-bold">ODYSSEYRIO</span>
                 </a>
                 <ul class="nav nav-pills d-none d-md-flex align-items-center">
@@ -61,8 +61,8 @@
                 </header>
                 <div class="d-flex flex-wrap py-5">
                     <div class="col-12 col-md-4 text-center text-lg-start">
-                        <img src="{{ asset('img/logo.gif') }}" alt="ODYSSEYRIO" title="ODYSSEYRIO" width="350"
-                            height="" class="mb-4 mb-lg-0">
+                        <img src="{{ asset('img/logo.gif') }}" alt="ODYSSEYRIO" width="350"
+                            height="299" class="mb-4 mb-lg-0">
                     </div>
                     <div class="col-12 col-md-8 d-flex align-items-center">
                         <ul class="w-100 text-center text-md-start">

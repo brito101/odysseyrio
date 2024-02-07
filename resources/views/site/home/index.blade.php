@@ -6,7 +6,8 @@
             <div class="col-xxl-8 px-4 py-5">
                 <div class="row align-items-center g-5 py-5">
                     <div class="col-12 col-lg-6 text-center">
-                        <img src="{{ asset('img/white_logo_transparent_background.png') }}" alt="ODYSSEYRIO" class="mb-4">
+                        <img src="{{ asset('img/white_logo_transparent_background.webp') }}" alt="ODYSSEYRIO" class="mb-4"
+                            width="350" height="350">
                         <h2 class="display-5 fw-bold lh-1 mb-3">ODYSSEYRIO</h2>
                         <p class="lead">Da concepção à entrega</p>
                     </div>
@@ -94,22 +95,23 @@
 
                 <div class="row d-flex flex-wrap justify-content-center gap-3">
                     <div class="card" style="width: 18rem;">
-                        <img src="{{ asset('img/management/management-1.webp') }}" alt="..." class="m-auto"
-                            width="100" height="100">
+                        <img src="{{ asset('img/management/management-1.webp') }}"
+                            alt="Garantimos a performance em todo ciclo do negócio" class="m-auto" width="92"
+                            height="80">
                         <div class="card-body">
                             <h4>Garantimos a performance em todo ciclo do negócio</h4>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
-                        <img src="{{ asset('img/management/management-2.webp') }}" alt="..." class="m-auto"
-                            width="100" height="100">
+                        <img src="{{ asset('img/management/management-2.webp') }}" alt="Mobilização em até 48 horas"
+                            class="m-auto" width="92" height="77">
                         <div class="card-body">
                             <h4>Mobilização em até 48 horas</h4>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
-                        <img src="{{ asset('img/management/management-3.webp') }}" alt="..." class="m-auto"
-                            width="100" height="100">
+                        <img src="{{ asset('img/management/management-3.webp') }}" alt="Gestão de riscos" class="m-auto"
+                            width="87" height="77">
                         <div class="card-body">
                             <h4>Gestão de riscos</h4>
                         </div>
@@ -168,9 +170,11 @@
 
     <section id="brands" class="pb-5">
         <div class="container py-5">
+            @php $brands = [1 => "Blue Macaw", 2 => "JLL", 3 => "Maersk", 4 => "Goodman"]@endphp
             <div class="d-flex flex-wrap justify-content-center">
                 @for ($i = 1; $i <= 4; $i++)
-                    <img src="{{ asset('img/brands/brand-' . $i . '.webp') }}" class="d-block w-100" alt="...">
+                    <img src="{{ asset('img/brands/brand-' . $i . '.webp') }}" class="d-block w-100"
+                        alt="{{ $brands[$i] }}" width="200" height="200">
                 @endfor
             </div>
         </div>
