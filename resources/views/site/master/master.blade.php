@@ -86,8 +86,7 @@
         </section>
     </footer>
 
-    <button aria-label="Voltar ao topo da página" title="Voltar ao topo da página" class="smoothScroll-top"><i
-            class="fa fa-chevron-up"></i></button>
+    <button aria-label="Voltar ao topo da página" title="Voltar ao topo da página" class="smoothScroll-top"><img src="{{ asset('img/icons/chevron-up-solid.svg') }}" width="20" height="20" alt="top" class="mb-2"></button>
 
     <script src="{{ asset('js/button-top.js') }}"></script>
     @yield('custom_js')
