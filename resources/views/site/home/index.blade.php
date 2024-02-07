@@ -124,7 +124,7 @@
     <section id="differentials" class="py-5">
         <div class="container pb-5">
             <header class="py-5">
-                <h3>DIFERENCIAIS<h3>
+                <h3>DIFERENCIAIS</h3>
             </header>
             <ul class="card col-12 col-lg-8 py-2 px-4">
                 <li class="my-2">Equipe multidisciplinar em várias áreas: arquitetura, engenharia, ambiental</li>
