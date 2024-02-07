@@ -34,7 +34,7 @@
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
                 <a href="{{ route('site.home') }}"
                     class="d-flex align-items-center mb-0 mb-md-2 mb-lg-0 m-md-auto m-lg-0 me-lg-auto text-decoration-none">
-                    <img src="{{ asset('img/black_icon_transparent_background.png') }}" class="bi me-3" width="55"
+                    <img src="{{ asset('img/black_icon_transparent_background.webp') }}" class="bi me-3" width="55"
                         height="60" alt="logo">
                     <span class="fs-2 fw-bold">ODYSSEYRIO</span>
                 </a>
