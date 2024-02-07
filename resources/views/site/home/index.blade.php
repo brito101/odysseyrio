@@ -97,14 +97,14 @@
                     <div class="card" style="width: 18rem;">
                         <img src="{{ asset('img/management/management-1.webp') }}"
                             alt="Garantimos a performance em todo ciclo do negócio" class="m-auto" width="92"
-                            height="80">
+                            height="77">
                         <div class="card-body">
                             <h4>Garantimos a performance em todo ciclo do negócio</h4>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
                         <img src="{{ asset('img/management/management-2.webp') }}" alt="Mobilização em até 48 horas"
-                            class="m-auto" width="92" height="77">
+                            class="m-auto" width="92" height="80">
                         <div class="card-body">
                             <h4>Mobilização em até 48 horas</h4>
                         </div>
