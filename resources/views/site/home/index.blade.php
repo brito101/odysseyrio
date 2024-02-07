@@ -17,8 +17,8 @@
 
     <section class="container py-5" id="company">
         <div class="d-flex flex-wrap">
-            <div class="col-12 col-md-7">
-                <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="col-12 col-lg-7">
+                <div id="companyCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner rounded shadow-lg">
                         @for ($i = 1; $i <= 8; $i++)
                             <div class="carousel-item {{ $i == 1 ? 'active' : '' }}">
@@ -27,20 +27,22 @@
                             </div>
                         @endfor
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#companyCarousel"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#companyCarousel"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </div>
-            <div class="col-12 col-md-5 px-4 d-flex flex-wrap align-items-center">
+            <div class="col-12 col-lg-5 px-4 d-flex flex-wrap align-items-center mt-5 mt-lg-0">
                 <div>
                     <header class=>
-                        <h3>A EMPRESA<h3>
+                        <h3>A EMPRESA</h3>
                     </header>
                     <p>Somos uma equipe vibrante, de especialistas em obras para Galpões Logísticos, Divisórias para Galpões
                         e
@@ -55,82 +57,122 @@
         </div>
     </section>
 
-    <section>
-
-    </section>
-
-    <section>
-        <div>
-            <header>
-                <h3>EXPERTISE<h3>
-            </header>
-            <ul>
-                <li>Projetos especiais para Galpões Logísticos</li>
-                <li>Divisórias Internas para Galpões</li>
-                <li>Recuperação e Manutenção de Pisos</li>
-            </ul>
+    <section id="expertise">
+        <div class="container py-5">
+            <div class="d-flex flex-wrap justify-content-center">
+                <div class="d-flex flex-wrap align-items-center">
+                    <div class="col-12">
+                        <header>
+                            <h3 class="text-center">EXPERTISE<h3>
+                        </header>
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><i class="fa fa-check me-2"></i> Projetos especiais para Galpões
+                                    Logísticos</li>
+                                <li class="list-group-item"><i class="fa fa-check me-2"></i> Divisórias Internas para
+                                    Galpões</li>
+                                <li class="list-group-item"><i class="fa fa-check me-2"></i> Recuperação e Manutenção de
+                                    Pisos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="{{ asset('img/expertise.png') }}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                        width="700" height="500" loading="lazy">
+                </div>
+            </div>
         </div>
     </section>
 
-    <section>
-        <div>
-            <header>
-                <h3>GESTÃO E GERENCIAMENTO DE OBRAS<h3>
-            </header>
-            <article>
-                <header>
-                    <h4>Garantimos a performance em todo ciclo do negócio</h4>
+    <section id="management">
+        <div class="container py-5">
+            <div class="py-5">
+                <header class="pb-4">
+                    <h3>GESTÃO E GERENCIAMENTO DE OBRAS</h3>
                 </header>
-            </article>
-            <article>
-                <header>
-                    <h4>Mobilização em até 48 horas</h4>
-                </header>
-            </article>
-            <article>
-                <header>
-                    <h4>Gestão de riscos</h4>
-                </header>
-            </article>
+
+                <div class="row d-flex flex-wrap justify-content-center gap-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ asset('img/management/management-1.webp') }}" alt="..." class="m-auto"
+                            width="100" height="100">
+                        <div class="card-body">
+                            <h4>Garantimos a performance em todo ciclo do negócio</h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ asset('img/management/management-2.webp') }}" alt="..." class="m-auto"
+                            width="100" height="100">
+                        <div class="card-body">
+                            <h4>Mobilização em até 48 horas</h4>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{ asset('img/management/management-3.webp') }}" alt="..." class="m-auto"
+                            width="100" height="100">
+                        <div class="card-body">
+                            <h4>Gestão de riscos</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section>
-        <div>
-            <header>
+    <section id="differentials" class="py-5">
+        <div class="container pb-5">
+            <header class="py-5">
                 <h3>DIFERENCIAIS<h3>
             </header>
-            <ul>
-                <li>Equipe multidisciplinar em várias áreas: arquitetura, engenharia, ambiental</li>
-                <li>Flexibilidade para diferentes tipologias</li>
-                <li>Cadeia de frio, CDs (sistemas de armazenagem, pisos para câmaras frias)</li>
-                <li>Credibilidade pautada em 12 anos de mercado.</li>
+            <ul class="card col-12 col-lg-8 py-2 px-4">
+                <li class="my-2">Equipe multidisciplinar em várias áreas: arquitetura, engenharia, ambiental</li>
+                <li class="my-2">Flexibilidade para diferentes tipologias</li>
+                <li class="my-2">Cadeia de frio, CDs (sistemas de armazenagem, pisos para câmaras frias)</li>
+                <li class="my-2">Credibilidade pautada em 12 anos de mercado.</li>
             </ul>
         </div>
     </section>
 
-    <section>
-        <div>
-            <article>
-                <header>
-                    <h4><span>+de 25</span> Clientes</h4>
-                </header>
-            </article>
-            <article>
-                <header>
-                    <h4><span>+de 20</span> Projetos especiais de engenharia</h4>
-                </header>
-            </article>
-            <article>
-                <header>
-                    <h4><span>+de 30.000 m<sup>2</sup></span> Instalação de Divisórias Internas</h4>
-                </header>
-            </article>
-            <article>
-                <header>
-                    <h4><span>+ de 46.000 m<sup>2</sup></span> Manutenção de Pisos</h4>
-                </header>
-            </article>
+    <section id="clients" class="py-5">
+        <div class="container pt-5">
+            <div class="d-flex flex-wrap justify-content-center">
+                <article class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <header>
+                        <h4>+ de <span class="counter-up" data-count-to="25"></span> <span class="text">Clientes</span>
+                        </h4>
+                    </header>
+                </article>
+                <article class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <header>
+                        <h4>+ de <span class="counter-up" data-count-to="20"></span> <span class="text">Projetos
+                                especiais de engenharia</span></h4>
+                    </header>
+                </article>
+                <article class="col-12 col-md-6 col-lg-3 mb-5 mb-lg-0">
+                    <header>
+                        <h4>+ de <span class="counter-up" data-count-to="30000"></span> m<sup>2</sup> <span
+                                class="text">Instalação de
+                                Divisórias Internas</span></h4>
+                    </header>
+                </article>
+                <article class="col-12 col-md-6 col-lg-3">
+                    <header>
+                        <h4>+ de <span class="counter-up" data-count-to="460000"></span> m<sup>2</sup> <span
+                                class="text">Manutenção de Pisos</span>
+                        </h4>
+                    </header>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="brands" class="pb-5">
+        <div class="container py-5">
+            <div class="d-flex flex-wrap justify-content-center">
+                @for ($i = 1; $i <= 4; $i++)
+                    <img src="{{ asset('img/brands/brand-' . $i . '.webp') }}" class="d-block w-100" alt="...">
+                @endfor
+            </div>
         </div>
     </section>
 @endsection
@@ -139,10 +181,11 @@
     <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.js') }}"></script>
     <script>
-        const myCarouselElement = document.querySelector('#myCarousel')
-        const carousel = new bootstrap.Carousel(myCarouselElement, {
+        const companyCarouselElement = document.querySelector('#companyCarousel')
+        const carousel = new bootstrap.Carousel(companyCarouselElement, {
             interval: 3000,
             touch: false
         })
     </script>
+    <script src="{{ asset('js/number-animation.js') }}"></script>
 @endsection

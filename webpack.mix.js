@@ -20,6 +20,7 @@ mix.js("resources/js/app.js", "public/js")
     .scripts(["resources/js/address.js"], "public/js/address.js")
     .scripts(["resources/js/phone.js"], "public/js/phone.js")
     .scripts(["resources/js/button-top.js"], "public/js/button-top.js")
+    .scripts(["resources/js/number-animation.js"], "public/js/number-animation.js")
     .scripts(["node_modules/bootstrap/dist/js/bootstrap.min.js"], "public/js/bootstrap.js")
     .options({
         processCssUrls: false,

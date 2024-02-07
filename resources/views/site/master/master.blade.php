@@ -10,19 +10,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    {{-- <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:site" content="" />
-<meta name="twitter:creator" content="" /> --}}
+    <meta name="twitter:card" content="summary_large_image" />
+    {{--  <meta name="twitter:site" content="" />
+    <meta name="twitter:creator" content="" /> --}}
     <meta name="twitter:domain" content="{{ env('APP_URL') }}" />
     {{-- <meta property="article:publisher" content="" />
-<meta property="article:author" content="" />
-<meta property="fb:app_id" content="" /> --}}
+    <meta property="article:author" content="" />
+    <meta property="fb:app_id" content="" /> --}}
     <meta itemprop="name" content="{{ env('APP_NAME') }}" />
     <meta itemprop="description" content="{{ env('APP_DESCRIPTION') }}" />
     <meta itemprop="url" content="{{ env('APP_URL') }}" />
-    {{-- <meta itemprop="image" content="{{ asset('img/share.png') }}" /> --}}
+    <meta itemprop="image" content="{{ asset('img/share.png') }}" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
-    {{-- <link rel="icon" type="image/png" href="{{ asset('img/logo.svg') }}" /> --}}
+    <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}" />
     <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/site/app.css') }}" />
     @metas
@@ -40,9 +40,9 @@
                 </a>
                 <ul class="nav nav-pills d-none d-md-flex align-items-center">
                     <li class="nav-item"><a href="#company" class="nav-link">A EMPRESA</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">EXPERTISE</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">GESTÃO</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">DIFERENCIAIS</a></li>
+                    <li class="nav-item"><a href="#expertise" class="nav-link">EXPERTISE</a></li>
+                    <li class="nav-item"><a href="#management" class="nav-link">GESTÃO</a></li>
+                    <li class="nav-item"><a href="#differentials" class="nav-link">DIFERENCIAIS</a></li>
                     <li class="nav-item"><a href="#footer" class="nav-link">CONTATO</a></li>
                 </ul>
             </header>
@@ -53,11 +53,11 @@
         @yield('content')
     </main>
 
-    <footer id="footer" class="py-4 text-light">
+    <footer id="footer" class="pt-5 pb-4 text-light">
         <section>
             <div class="container">
                 <header>
-                    <h2 class="fs-2 fw-bold text-center text-lg-start mt-4">CONTATO</h2>
+                    <h2 class="text-center text-lg-start mt-4">CONTATO</h2>
                 </header>
                 <div class="d-flex flex-wrap py-5">
                     <div class="col-12 col-md-4 text-center text-lg-start">
@@ -73,7 +73,7 @@
                                     href="https://wa.me/5521970882353" target="_blank" rel="noreferrer">+55 21 97088
                                     2353</a></li>
                             <li class="my-2"><i class="fa fa-globe me-2"></i> <a
-                                    href="www.odysseyrio.com.br">www.odysseyrio.com.br</a></li>
+                                    href="{{ route('site.home') }}">odysseyrio.com.br</a></li>
                         </ul>
                     </div>
                 </div>

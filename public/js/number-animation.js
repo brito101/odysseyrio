@@ -1,0 +1,1 @@
+const tempo_intervalo=5,tempo=4e3;$(".counter-up").each((function(){let t=parseInt($(this).data("countTo")),e=t/800,n=0,o=$(this),a=setInterval((function(){n>=t&&(n=t,clearInterval(a));let c=n.toFixed(0).toString().replace(/(\d)(?=(\d{3})+(?!\d))/g,"$1.");o.text(c),n+=e}),5)}));
