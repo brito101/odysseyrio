@@ -23,7 +23,6 @@
     <meta itemprop="image" content="{{ asset('img/share.png') }}" />
     <meta name="csrf-token" content="{{ csrf_token() }}" />
     <link rel="icon" type="image/png" href="{{ asset('img/favicon.png') }}" />
-    <link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/site/app.css') }}" />
     <link rel="preload" fetchpriority="high" as="image" href="{{ asset('img/bg-hero.webp') }}" type="image/webp">
     @metas
@@ -67,13 +66,13 @@
                     </div>
                     <div class="col-12 col-md-8 d-flex align-items-center">
                         <ul class="w-100 text-center text-md-start">
-                            <li class="my-2"><i class="fa fa-envelope me-2"></i> <a title="Contato por e-mail"
+                            <li class="my-2"><img src="{{ asset('img/icons/envelope-regular.svg') }}" width="20" height="20" alt="e-mail" class="me-2"> <a title="Contato por e-mail"
                                     href="mailto:odysseyservicos@proton.me"
                                     rel="noreferrer">odysseyservicos@proton.me</a></li>
-                            <li class="my-2"><i class="fab fa-whatsapp me-2"></i> <a title="Contato por WhatApp"
+                            <li class="my-2"><img src="{{ asset('img/icons/whatsapp.svg') }}" width="20" height="20" alt="whatsapp" class="me-2"> <a title="Contato por WhatApp"
                                     href="https://wa.me/5521970882353" target="_blank" rel="noreferrer">+55 21 97088
                                     2353</a></li>
-                            <li class="my-2"><i class="fa fa-globe me-2"></i> <a
+                            <li class="my-2"><img src="{{ asset('img/icons/globe-solid.svg') }}" width="20" height="20" alt="site" class="me-2"> <a
                                     href="{{ route('site.home') }}">odysseyrio.com.br</a></li>
                         </ul>
                     </div>

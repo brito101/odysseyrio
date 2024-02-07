@@ -68,11 +68,11 @@
                         </header>
                         <div class="card">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><i class="fa fa-check me-2"></i> Projetos especiais para Galpões
+                                <li class="list-group-item"><img src="{{ asset('img/icons/check-solid.svg') }}" width="20" height="20" alt="check" class="me-2"> Projetos especiais para Galpões
                                     Logísticos</li>
-                                <li class="list-group-item"><i class="fa fa-check me-2"></i> Divisórias Internas para
+                                <li class="list-group-item"><img src="{{ asset('img/icons/check-solid.svg') }}" width="20" height="20" alt="check" class="me-2"> Divisórias Internas para
                                     Galpões</li>
-                                <li class="list-group-item"><i class="fa fa-check me-2"></i> Recuperação e Manutenção de
+                                <li class="list-group-item"><img src="{{ asset('img/icons/check-solid.svg') }}" width="20" height="20" alt="check" class="me-2"> Recuperação e Manutenção de
                                     Pisos</li>
                             </ul>
                         </div>
