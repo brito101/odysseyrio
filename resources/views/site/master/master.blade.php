@@ -32,7 +32,7 @@
     <div class="shadow-lg sticky-top bg-light" id="header">
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
-                <h1 class="d-none">ODYSSEYRIO</h1>
+                <h1 class="d-none">{{ env('APP_NAME') - env('APP_DESCRIPTION') }}</h1>
                 <a href="{{ route('site.home') }}"
                     class="d-flex align-items-center mb-0 mb-md-2 mb-lg-0 m-md-auto m-lg-0 me-lg-auto text-decoration-none">
                     <img src="{{ asset('img/black_icon_transparent_background.webp') }}" class="bi me-3" width="55"
