@@ -21,7 +21,7 @@
             <div class="col-12 col-lg-7">
                 <div id="companyCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-inner rounded shadow-lg">
-                        @for ($i = 1; $i <= 8; $i++)
+                        @for ($i = 1; $i <= 9; $i++)
                             <div class="carousel-item {{ $i == 1 ? 'active' : '' }}">
                                 <img src="{{ asset('img/slide/slide-' . $i . '.webp') }}" class="d-block w-100"
                                     alt="Imagem do depósito {{ $i }}" width="756" height="425">
@@ -45,46 +45,68 @@
                     <header class=>
                         <h3>A EMPRESA</h3>
                     </header>
-                    <p>Somos uma equipe vibrante, de especialistas em obras para Galpões Logísticos, Divisórias para Galpões
-                        e
-                        de
-                        Recuperação e
-                        Manutenção de Pisos.</p>
+                    <p>Somos uma equipe vibrante, de Especialistas em Obras, Manutenção e Engenharia.</p>
+                    <p>Atuando "Da concepção à entrega" de imóveis Corporativos, de Varejo, Hoteleiros, Logística e
+                        Industria.</p>
                     <p>Nossa abordagem de responsabilidade é simples: observamos, ouvimos e fazemos as coisas de uma maneira
-                        melhor.
-                    </p>
+                        melhor.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <div class="separator"></div>
+
     <section id="expertise">
-        <div class="container py-5">
+        <div class="container pb-5 pt-2">
             <div class="d-flex flex-wrap justify-content-center">
-                <div class="d-flex flex-wrap align-items-center">
+                <div class="d-flex flex-wrap align-items-center col-12 col-lg-7">
                     <div class="col-12">
                         <header>
                             <h3 class="text-center">EXPERTISE</h3>
                         </header>
                         <div class="card">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><img src="{{ asset('img/icons/check-solid.svg') }}" width="20" height="20" alt="check" class="me-2"> Projetos especiais para Galpões
-                                    Logísticos</li>
-                                <li class="list-group-item"><img src="{{ asset('img/icons/check-solid.svg') }}" width="20" height="20" alt="check" class="me-2"> Divisórias Internas para
-                                    Galpões</li>
-                                <li class="list-group-item"><img src="{{ asset('img/icons/check-solid.svg') }}" width="20" height="20" alt="check" class="me-2"> Recuperação e Manutenção de
-                                    Pisos</li>
+                                <li class="list-group-item"><img src="{{ asset('img/icons/check-solid.svg') }}"
+                                        width="20" height="20" alt="check" class="me-2"> Obras Especiais de
+                                    Engenharia</li>
+                                <li class="list-group-item"><img src="{{ asset('img/icons/check-solid.svg') }}"
+                                        width="20" height="20" alt="check" class="me-2"> Manutenção
+                                    Eletromecânica</li>
+                                <li class="list-group-item"><img src="{{ asset('img/icons/check-solid.svg') }}"
+                                        width="20" height="20" alt="check" class="me-2"> Contratos de Manutenção
+                                    Predial (Preventiva, Corretiva e Preditiva)</li>
+                                <li class="list-group-item"><img src="{{ asset('img/icons/check-solid.svg') }}"
+                                        width="20" height="20" alt="check" class="me-2"> Manutenção Predial
+                                    (Reformas e Pinturas Horizontal e Vertical)</li>
+                                <li class="list-group-item"><img src="{{ asset('img/icons/check-solid.svg') }}"
+                                        width="20" height="20" alt="check" class="me-2"> Recuperação e
+                                    Manutenção de Pisos, Pátios e Estacionamentos</li>
+                                <li class="list-group-item"><img src="{{ asset('img/icons/check-solid.svg') }}"
+                                        width="20" height="20" alt="check" class="me-2"> Obras Logísticas
+                                    (Construção, Cobertura, Instalações Hidráulicas, Divisórias para Galpões)</li>
+                                <li class="list-group-item"><img src="{{ asset('img/icons/check-solid.svg') }}"
+                                        width="20" height="20" alt="check" class="me-2"> Obras Industriais e
+                                    Comerciais</li>
+                                <li class="list-group-item"><img src="{{ asset('img/icons/check-solid.svg') }}"
+                                        width="20" height="20" alt="check" class="me-2"> HVAC e Sala de Máquinas
+                                </li>
+                                <li class="list-group-item"><img src="{{ asset('img/icons/check-solid.svg') }}"
+                                        width="20" height="20" alt="check" class="me-2"> Inspeções Técnicas
+                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img src="{{ asset('img/expertise.webp') }}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
+                <div class="col-12 col-lg-5 d-flex align-items-center">
+                    <img src="{{ asset('img/expertise.webp') }}" class="d-block m-auto img-fluid" alt="Expertise"
                         width="700" height="500" loading="lazy">
                 </div>
             </div>
         </div>
     </section>
+
+    <div class="separator"></div>
 
     <section id="management">
         <div class="container py-5">
@@ -135,6 +157,18 @@
         </div>
     </section>
 
+    <!-- Gallery -->
+    <div class="container py-5 mt-5" id="galery">
+        <div class="row d-flex flex-wrap justify-content-center">
+            @for ($i = 1; $i <= 2; $i++)
+                <div class="col-12 col-lg-6 p-3 mb-4 mb-lg-0">
+                    <img src="{{ asset('img/galery-' . $i . '.webp') }}" class="shadow-lg rounded" width="800" height="600" alt="galery-{{ $i }}"/>
+                </div>
+            @endfor
+        </div>
+    </div>
+    <!-- Gallery -->
+
     <section id="clients" class="py-5">
         <h3 class="d-none">NOSSOS NÚMEROS</h3>
         <div class="container pt-5">
@@ -172,9 +206,9 @@
     <section id="brands" class="pb-5">
         <h3 class="d-none">CLIENTES</h3>
         <div class="container py-5">
-            @php $brands = [1 => "Blue Macaw", 2 => "JLL", 3 => "Maersk", 4 => "Goodman"]@endphp
+            @php $brands = [1=> "Whirlpool", 2=> "Copacana Palace", 3 => "Blue Macaw", 4 => "JLL", 5 => "Maersk", 6 => "Goodman"]@endphp
             <div class="d-flex flex-wrap justify-content-center">
-                @for ($i = 1; $i <= 4; $i++)
+                @for ($i = 1; $i <= 6; $i++)
                     <img src="{{ asset('img/brands/brand-' . $i . '.webp') }}" class="d-block w-100"
                         alt="{{ $brands[$i] }}" width="200" height="200">
                 @endfor

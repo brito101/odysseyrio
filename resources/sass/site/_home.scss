@@ -94,7 +94,6 @@
 
 #expertise {
     background-color: $color-yellow;
-    box-shadow: inset 0 180px #fff, inset 0 -180px $background-color;
 
     h3 {
         font-family: "Roboto", sans-serif;
@@ -110,6 +109,11 @@
     ul {
         border: 2px solid $color-yellow;
     }
+}
+
+.separator {
+    height: 5rem;
+    background-color: #fff;
 }
 
 #management {
@@ -209,6 +213,12 @@
             top: 0.7rem;
             background: $color-yellow;
         }
+    }
+}
+
+#galery {
+    img {
+        object-fit: cover;
     }
 }
 
