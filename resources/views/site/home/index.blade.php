@@ -157,8 +157,7 @@
         </div>
     </section>
 
-    <!-- Gallery -->
-    <div class="container py-5 mt-5" id="galery">
+    <div class="container py-5 mt-5" id="gallery">
         <div class="row d-flex flex-wrap justify-content-center">
             @for ($i = 1; $i <= 2; $i++)
                 <div class="col-12 col-lg-6 p-3 mb-4 mb-lg-0">
@@ -167,7 +166,6 @@
             @endfor
         </div>
     </div>
-    <!-- Gallery -->
 
     <section id="clients" class="py-5">
         <h3 class="d-none">NOSSOS NÚMEROS</h3>
