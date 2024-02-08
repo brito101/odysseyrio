@@ -32,11 +32,12 @@
     <div class="shadow-lg sticky-top bg-light" id="header">
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4">
-                <h1><a href="{{ route('site.home') }}"
+                <h1 class="d-none">ODYSSEYRIO</h1>
+                <a href="{{ route('site.home') }}"
                     class="d-flex align-items-center mb-0 mb-md-2 mb-lg-0 m-md-auto m-lg-0 me-lg-auto text-decoration-none">
                     <img src="{{ asset('img/black_icon_transparent_background.webp') }}" class="bi me-3" width="55"
                         height="60" alt="logo">
-                    <span class="fs-2 fw-bold">ODYSSEYRIO</span></h1>
+                    <span class="fs-2 fw-bold">ODYSSEYRIO</span>
                 </a>
                 <ul class="nav nav-pills d-none d-md-flex align-items-center">
                     <li class="nav-item"><a href="#company" class="nav-link">A EMPRESA</a></li>
@@ -66,13 +67,16 @@
                     </div>
                     <div class="col-12 col-md-8 d-flex align-items-center">
                         <ul class="w-100 text-center text-md-start">
-                            <li class="my-2"><img src="{{ asset('img/icons/envelope-regular.svg') }}" width="20" height="20" alt="e-mail" class="me-2"> <a title="Contato por e-mail"
+                            <li class="my-2"><img src="{{ asset('img/icons/envelope-regular.svg') }}" width="20"
+                                    height="20" alt="e-mail" class="me-2"> <a title="Contato por e-mail"
                                     href="mailto:odysseyservicos@proton.me"
                                     rel="noreferrer">odysseyservicos@proton.me</a></li>
-                            <li class="my-2"><img src="{{ asset('img/icons/whatsapp.svg') }}" width="20" height="20" alt="whatsapp" class="me-2"> <a title="Contato por WhatApp"
+                            <li class="my-2"><img src="{{ asset('img/icons/whatsapp.svg') }}" width="20"
+                                    height="20" alt="whatsapp" class="me-2"> <a title="Contato por WhatApp"
                                     href="https://wa.me/5521970882353" target="_blank" rel="noreferrer">+55 21 97088
                                     2353</a></li>
-                            <li class="my-2"><img src="{{ asset('img/icons/globe-solid.svg') }}" width="20" height="20" alt="site" class="me-2"> <a
+                            <li class="my-2"><img src="{{ asset('img/icons/globe-solid.svg') }}" width="20"
+                                    height="20" alt="site" class="me-2"> <a
                                     href="{{ route('site.home') }}">odysseyrio.com.br</a></li>
                         </ul>
                     </div>
@@ -86,7 +90,9 @@
         </section>
     </footer>
 
-    <button aria-label="Voltar ao topo da página" title="Voltar ao topo da página" class="smoothScroll-top"><img src="{{ asset('img/icons/chevron-up-solid.svg') }}" width="20" height="20" alt="top" class="mb-2"></button>
+    <button aria-label="Voltar ao topo da página" title="Voltar ao topo da página" class="smoothScroll-top"><img
+            src="{{ asset('img/icons/chevron-up-solid.svg') }}" width="20" height="20" alt="top"
+            class="mb-2"></button>
 
     <script src="{{ asset('js/button-top.js') }}"></script>
     @yield('custom_js')
